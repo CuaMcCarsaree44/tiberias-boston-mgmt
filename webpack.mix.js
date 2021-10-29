@@ -11,7 +11,29 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);
+mix    /* CSS */
+    .sass('resources/sass/main.scss', 'public/css/dashmix.css')
+    .sass('resources/sass/dashmix/themes/xwork.scss', 'public/css/themes/')
+
+    /* JS */
+    .js('resources/js/laravel/app.js', 'public/js/laravel.app.js')
+    .combine([
+
+        /**
+         * Components
+         */
+        'resources/js/laravel/dist/components/loader.js'
+
+        /**
+         * Factory
+         */
+
+        /**
+         * View Model
+         */
+
+        /**
+         * Services
+         */
+    ], 'public/js/main.app.js')
+    .js('resources/js/dashmix/app.js', 'public/js/dashmix.app.js')
