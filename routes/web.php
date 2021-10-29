@@ -13,4 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', fn () => view(''));
+Route::get('/', fn () => view('landing-page'));
+
+Route::get('/crm', fn() => view('crm/main'));
