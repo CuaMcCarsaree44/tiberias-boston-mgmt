@@ -27,13 +27,6 @@ class Console
 
         $console = new \Symfony\Component\Console\Output\ConsoleOutput;
 
-        $console->setVerbosity(match($logType) {
-            'INFO' => 'normal',
-            'WARNING' => 'verbose',
-            'ERROR' => 'very verbose',
-            default => strtolower($logType) 
-        });
-
         $console->writeln("[$logType][$currentEpoch] $message");
     }
 }
