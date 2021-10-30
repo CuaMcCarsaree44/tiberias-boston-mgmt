@@ -7,7 +7,7 @@
 
     <script type="text/javascript">
 
-        location.href = '/crm';
+        location.href = '/crm/main';
 
     </script>
 @endsection

@@ -26,13 +26,13 @@
 
     @yield('content')
 
-    <script 
-        src="{{ asset('/js/app.js') }}"
-        type="text/javascript">
-    </script>
-
-
     @yield('js_after')
 
+    @include('template/footer')
+
+    <script 
+        src="{{ asset('/js/main.app.js') }}?v=1"
+        type="module">
+    </script>
 </body>
 </html>
