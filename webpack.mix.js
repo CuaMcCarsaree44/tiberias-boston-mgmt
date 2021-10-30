@@ -17,23 +17,12 @@ mix    /* CSS */
 
     /* JS */
     .js('resources/js/laravel/app.js', 'public/js/laravel.app.js')
-    .combine([
+    .scripts([
 
         /**
-         * Components
+         * jQuery Module
          */
-        'resources/js/laravel/dist/components/loader.js'
-
-        /**
-         * Factory
-         */
-
-        /**
-         * View Model
-         */
-
-        /**
-         * Services
-         */
+        'resources/js/laravel/jQuery/*.js', 
     ], 'public/js/main.app.js')
+    
     .js('resources/js/dashmix/app.js', 'public/js/dashmix.app.js')
