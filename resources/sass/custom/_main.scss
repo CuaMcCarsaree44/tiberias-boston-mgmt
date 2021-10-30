@@ -33,3 +33,12 @@
   }
   
   
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a.hero-anchor {
+  color: white !important;
+  font-weight: bold;
+}
