@@ -1,0 +1,1 @@
+<?php /**PATH /Users/yosuakristianto/Documents/Tiberias/diakonia-mgmt/resources/views/template/seo.blade.php ENDPATH**/ ?>
