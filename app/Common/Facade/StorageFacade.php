@@ -24,7 +24,7 @@ class StorageFacade {
 
         Storage::putFileAs(MemberDocument::MEMBER_DOCUMENT_DIRECTORY, $file, $file_name);
 
-        return "/storage/" .'/'. MemberDocument::MEMBER_DOCUMENT_DIRECTORY .'/'. $file_name;
+        return "/storage/". MemberDocument::MEMBER_DOCUMENT_DIRECTORY .'/'. $file_name;
     }
 
 }
