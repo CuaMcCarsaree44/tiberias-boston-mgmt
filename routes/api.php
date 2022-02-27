@@ -16,6 +16,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('api')->group(function(){
 
+    Route::group([
+        'prefix' => 'auth',
+        "namespace" => 'App\Http\Controllers'
+    ], function() {
+       Route::post('register', 'AuthController@register');
+    });
 
     Route::group([
         'prefix' => 'member',
