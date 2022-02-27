@@ -16,9 +16,9 @@ class BadRequestException extends BaseException
     public function __construct($error_messages)
     {
         parent::__construct(
-            "Bad Request.",
+            "Bad Request: $error_messages",
             "400",
-            $error_messages
+            null
         );
     }
 }
